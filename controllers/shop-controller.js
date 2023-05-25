@@ -15,7 +15,7 @@ const getAllShops = async (req, res) => {
 	// 	query.favorite = favorite === "true";
 	// }
 
-	const result = await Shop.find();
+	const result = await Shop.find({});
 
 	res.json(result);
 };
